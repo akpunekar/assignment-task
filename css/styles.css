@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Patrick+Hand&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+
+html{
+    background-color: #B9F8D3;
+    font-size: 1.5rem;
+}
+
+
+h1{
+    font-family: 'Happy Monkey', cursive;
+    color:#001E6C;
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-family: 'Caveat', cursive;
+    line-height: 1.5;
+    width: 85%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 0.5em;
+}
+
+nav{
+    background:#A2B38B;
+    height: 80px;
+    width: 100%;
+}
+
+nav .logo{
+    padding-left: 3em;
+    color:#383838;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+
+nav ul{
+    float:right;
+    margin-right: 1.2em;    
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+nav ul li a{
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #066163;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 75px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+input , .checkbtn{
+    display: none;
+}
+
+aside button{
+    border: none;
+    margin-bottom: .1em;
+    color: #B9F8D3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.8em 0.2em 0.8em 0.2em;
+    background-color: #874356;
+}
+
+aside .focus:focus{
+    background-color:#A2B38B ;
+}
+
+img{
+    width: 85%;
+    height: auto;
+    margin-top: .5rem;
+}
+
+
+footer .grid-parent{
+    margin-top:1rem ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.5em;
+}
+
+footer .column {
+    color: #383838;
+    background-color: #A2B38B;
+    height: 2.5em;
+    width: 100%;
+    text-align: center;
+    font-size: .7em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .column i{
+    font-size: 2em;
+    margin: .2em;
+}
+
+
+@media(max-width:952px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        margin: 0;
+        top:80px;
+        right: -100%;
+        height: 100vh;
+        background-color:#A2B38B;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        width: 13%;
+    }
+
+    nav ul li a{
+        font-size: 1rem;
+    }
+
+    #check:checked ~ ul{
+        right: 0;
+    }
+
+}
+
+@media(max-width:533px){
+    footer .grid-parent{
+        display: block;
+     }
+}
+
