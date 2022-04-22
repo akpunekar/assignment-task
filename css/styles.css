@@ -20,7 +20,7 @@ html{
 h1{
     font-family: 'Happy Monkey', cursive;
     color:#001E6C;
-    font-size: 3em;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -42,7 +42,7 @@ nav{
     width: 100%;
 }
 
-nav .logo{
+nav label a{
     padding-left: 3em;
     color:#383838;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -157,6 +157,9 @@ footer .column i{
 @media(max-width:533px){
     footer .grid-parent{
         display: block;
+     }
+     nav label a{
+         padding-left: 1rem;
      }
 }
 
